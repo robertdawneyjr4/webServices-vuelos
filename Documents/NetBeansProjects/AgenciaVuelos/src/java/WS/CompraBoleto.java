@@ -16,13 +16,31 @@ import javax.jws.WebParam;
 @WebService(serviceName = "CompraBoleto")
 public class CompraBoleto {
 
-    /**
-     * Web service operation
-     */
-    @WebMethod(operationName = "CompraBoleto")
-    public String CompraBoleto(@WebParam(name = "tipo") String tipo, @WebParam(name = "hora") String hora, @WebParam(name = "pago") String pago) {
-        //TODO write your implementation code here:
-        return tipo+"  "+ hora+"  "+ pago;
+    
+    @WebMethod(operationName = "boletos")
+    public int boletos(@WebParam(name = "tipo") String tipor, @WebParam(name = "hora") String hora, @WebParam(name = "fPago") String fPago, @WebParam(name = "nombre") String nombre, @WebParam(name = "telefono") String telefono, @WebParam(name = "correo") String correo, @WebParam(name = "fecha") String fecha, @WebParam(name = "precio") int precio) {
+        int multi=0;
+        if(tipor.equals("Ligero")){
+                      
+          for(int i=0; i<=precio;i++){
+             multi= 500*i;
+          }
+           return multi ;
+        }
+        
+        
+        
+          if(tipor.equals("Extra")){
+              for(int i=0; i<=precio;i++){
+             multi= 1000*i;
+          }
+               return multi;
+          }    
+          else{
+               return -1;
+          }  
+     
+                 
     }
 
    

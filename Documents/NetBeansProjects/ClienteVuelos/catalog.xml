@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/AgenciaVuelos/Login?wsdl" uri="xml-resources/web-service-references/Login/wsdl/localhost_8080/AgenciaVuelos/Login.wsdl"/>
+    <system systemId="http://localhost:8080/AgenciaVuelos/Login?xsd=1" uri="xml-resources/web-service-references/Login/wsdl/localhost_8080/AgenciaVuelos/Login.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/AgenciaVuelos/RegistroUsuario?wsdl" uri="xml-resources/web-service-references/RegistroUsuario/wsdl/localhost_8080/AgenciaVuelos/RegistroUsuario.wsdl"/>
+    <system systemId="http://localhost:8080/AgenciaVuelos/RegistroUsuario?xsd=1" uri="xml-resources/web-service-references/RegistroUsuario/wsdl/localhost_8080/AgenciaVuelos/RegistroUsuario.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/AgenciaVuelos/CompraBoleto?wsdl" uri="xml-resources/web-service-references/CompraBoleto/wsdl/localhost_8080/AgenciaVuelos/CompraBoleto.wsdl"/>
+    <system systemId="http://localhost:8080/AgenciaVuelos/CompraBoleto?xsd=1" uri="xml-resources/web-service-references/CompraBoleto/wsdl/localhost_8080/AgenciaVuelos/CompraBoleto.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/AgenciaVuelos/CompraVuelo?wsdl" uri="xml-resources/web-service-references/CompraVuelo/wsdl/localhost_8080/AgenciaVuelos/CompraVuelo.wsdl"/>
+    <system systemId="http://localhost:8080/AgenciaVuelos/CompraVuelo?xsd=1" uri="xml-resources/web-service-references/CompraVuelo/wsdl/localhost_8080/AgenciaVuelos/CompraVuelo.xsd_1.xsd"/>
+</catalog>

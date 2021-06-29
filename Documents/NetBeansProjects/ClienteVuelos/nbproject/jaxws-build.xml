@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-Login" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Login"/>
+        <property name="wsdl-Login" location="xml-resources/web-service-references/Login/wsdl/localhost_8080/AgenciaVuelos/Login.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Login" destdir="${build.generated.dir}/jax-wsCache/Login" wsdl="${wsdl-Login}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/AgenciaVuelos/Login?wsdl" xnocompile="true" xendorsed="true" package="WS">
+            <depends file="${wsdl-Login}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Login"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Login">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Login" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Login"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WS"/>
+    </target>
+    <target name="wsimport-client-RegistroUsuario" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/RegistroUsuario"/>
+        <property name="wsdl-RegistroUsuario" location="xml-resources/web-service-references/RegistroUsuario/wsdl/localhost_8080/AgenciaVuelos/RegistroUsuario.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RegistroUsuario" destdir="${build.generated.dir}/jax-wsCache/RegistroUsuario" wsdl="${wsdl-RegistroUsuario}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/AgenciaVuelos/RegistroUsuario?wsdl" xnocompile="true" xendorsed="true" package="WS">
+            <depends file="${wsdl-RegistroUsuario}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/RegistroUsuario"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/RegistroUsuario">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-RegistroUsuario" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/RegistroUsuario"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WS"/>
+    </target>
+    <target name="wsimport-client-CompraBoleto" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CompraBoleto"/>
+        <property name="wsdl-CompraBoleto" location="xml-resources/web-service-references/CompraBoleto/wsdl/localhost_8080/AgenciaVuelos/CompraBoleto.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CompraBoleto" destdir="${build.generated.dir}/jax-wsCache/CompraBoleto" wsdl="${wsdl-CompraBoleto}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/AgenciaVuelos/CompraBoleto?wsdl" xnocompile="true" xendorsed="true" package="WS">
+            <depends file="${wsdl-CompraBoleto}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CompraBoleto"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CompraBoleto">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CompraBoleto" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CompraBoleto"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WS"/>
+    </target>
+    <target name="wsimport-client-CompraVuelo" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CompraVuelo"/>
+        <property name="wsdl-CompraVuelo" location="xml-resources/web-service-references/CompraVuelo/wsdl/localhost_8080/AgenciaVuelos/CompraVuelo.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CompraVuelo" destdir="${build.generated.dir}/jax-wsCache/CompraVuelo" wsdl="${wsdl-CompraVuelo}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/AgenciaVuelos/CompraVuelo?wsdl" xnocompile="true" xendorsed="true" package="WS">
+            <depends file="${wsdl-CompraVuelo}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CompraVuelo"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CompraVuelo">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CompraVuelo" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CompraVuelo"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/WS"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-Login, wsimport-client-RegistroUsuario, wsimport-client-CompraBoleto, wsimport-client-CompraVuelo"/>
+</project>
